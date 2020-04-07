@@ -1,4 +1,4 @@
-# Predictionof Simulated Data
+# Prediction of Simulated Data
 
 This experiment contains R scripts to run prediction of simulated data for different MRA parameter values and to produce figures / tables similar to the ones in the paper.
 Notice that depending on the choice of MRA parameters, execution of the scripts may take a long time.
