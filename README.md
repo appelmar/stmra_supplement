@@ -26,3 +26,9 @@ Please make sure you have the latest version of R and the following packages are
 * `spacetime` (from CRAN)
 * `car` (from CRAN)
 * `colorspace` (from CRAN)
+
+Use the following command to install all needed CRAN packages:
+
+```
+install.packages(c("raster","nloptr", "Rcpp", "RandomFields", "gstat", "spacetime", "car", "colorspace"))
+```
