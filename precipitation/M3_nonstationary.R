@@ -59,7 +59,7 @@ part = stmra_partition(M, r, pred_data, region_minsize = c(0, 0, 5))
 lower = c(0.001, 0.001, 0.5, rep(0.1,9), rep(0.5,9), rep(0.5,9))
 upper = c(  1,     1,  30,  rep(20,9),  rep(50,9),  rep(50,9))
 theta0 = c(0.1, 0.1, 5, rep(2,9), rep(10, 9), rep(10,9))
-model = stmra(part,stmra_cov_nonstationary_R2_separable, pred_data, theta0 = theta0, lower = lower, upper= upper, trace = TRUE, control=list(ftol.abs = 0.2, max.iter = 500))
+model = stmra(part,stmra_cov_nonstationary_R2_separable, pred_data, theta0 = theta0, lower = lower, upper= upper, trace = TRUE, control=list(ftol_abs = 0.2, maxeval = 500))
 
 
 
