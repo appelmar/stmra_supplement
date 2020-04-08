@@ -58,7 +58,7 @@ part = stmra_partition(M, r, pred_data, region_minsize = c(0, 0, 5))
 lower = c(0.1,   0.1,  0.1,   0.01,   0.01)
 upper = c( 50,   60,  30,  15,  15)
 theta0 = c(8, 5, 4, 0.2, 0.2)
-model = stmra(part,stmra_cov_separable_exp, pred_data, theta0 = theta0, lower = lower, upper= upper, trace = TRUE, control=list(ftol.abs = 0.2, max.iter = 500))
+model = stmra(part,stmra_cov_separable_exp, pred_data, theta0 = theta0, lower = lower, upper= upper, trace = TRUE, control=list(ftol_abs = 0.2, maxeval = 500))
 
 
 
