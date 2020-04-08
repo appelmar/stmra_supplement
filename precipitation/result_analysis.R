@@ -5,9 +5,9 @@ result_files = list.files(pattern = "RESULT.*.RData", full.names = TRUE)
 for (f in result_files) {
   e = new.env()
   load(f, envir = e)
-  M = e$model$M
-  r = e$model$r
-  model = substr(f, 25,26)
+  M = e$model$part$M
+  r = e$model$part$r
+  model = substr(basename(f), 8,9)
   results_all_A = rbind(results_all_A, (c(model = model, M=M,r=r, as.numeric(e$result_A_singlepart$measures))))
   colnames(results_all_A) <- c("model", "M","r", names(e$result_A_singlepart$measures))
   
