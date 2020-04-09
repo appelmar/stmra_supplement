@@ -21,6 +21,7 @@ for (i in 4:10) {
 
 results_all = merge(results_all_A,results_all_B, by=c("model","M", "r"))
 results_all[,c(10,17)] = round(results_all[,c(10,17)] / 60)
+results_all = results_all[,c(1,2,3,4,6,8,10,11,13,15,17)]
 
 cnames = c("Model", "M", "r", "RMSE", "MAE", "COV2SD", "Runtime (min)", "RMSE", "MAE", "COV2SD", "Runtime (min)")
 colnames(results_all) <- cnames
